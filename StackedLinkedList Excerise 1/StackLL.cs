@@ -83,7 +83,20 @@ namespace StackedLinkedList_Excerise_1
 
         public int Size()
         {
-            throw new NotImplementedException();
+            int count = 0;
+
+            if (head == null)
+                return 0;
+
+            Node temp = head;
+
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+
+            return count;
         }
 
 

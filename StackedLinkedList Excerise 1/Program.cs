@@ -19,7 +19,8 @@
             Console.WriteLine("\nPeek The list");
             Console.WriteLine("The top of the stack: " + s1.Peek());
 
-
+            Console.WriteLine("\nSize of the stack: " + s1.Size());
+            
         }
     }
 }
