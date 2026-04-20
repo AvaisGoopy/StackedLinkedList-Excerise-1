@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace StackedLinkedList_Excerise_1
 {
-     interface IMember
-    {     
+    interface IMember
+    {
         public void Push(string value);
 
 
@@ -24,6 +24,8 @@ namespace StackedLinkedList_Excerise_1
         int Size();  //returns the size (number of elements) in the stack
 
         public string Peek();  //prints the top of the stack
+
+
 
     }
 }

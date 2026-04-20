@@ -99,6 +99,41 @@ namespace StackedLinkedList_Excerise_1
             return count;
         }
 
+        public void InsertAtBottom(string value)
+        {
+            // Base case
+            if (IsEmpty())
+            {
+                Push(value);
+                return;
+            }
+
+            // Store top element
+            string top = Peek();
+            Pop();
+
+            // Recursive call
+            InsertAtBottom(value);
+
+            // Push stored element back
+            Push(top);
+        }
+
+        public void ReverseStack()
+        {
+            if (IsEmpty())
+                return;
+
+            // Store top element
+            string top = Peek();
+            Pop();
+
+            // Reverse remaining stack
+            ReverseStack();
+
+            // Insert at bottom
+            InsertAtBottom(top);
+        }
 
     }
 }

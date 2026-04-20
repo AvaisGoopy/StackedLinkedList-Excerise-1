@@ -20,7 +20,10 @@
             Console.WriteLine("The top of the stack: " + s1.Peek());
 
             Console.WriteLine("\nSize of the stack: " + s1.Size());
-            
+ 
+            Console.WriteLine("\nReversed Stack: ");
+            s1.ReverseStack();
+            s1.printAllNodes();
         }
     }
 }
