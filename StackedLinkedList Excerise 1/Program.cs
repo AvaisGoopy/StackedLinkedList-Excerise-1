@@ -24,6 +24,9 @@
             Console.WriteLine("\nReversed Stack: ");
             s1.ReverseStack();
             s1.printAllNodes();
+
+
+            //,jsdljdvkljk
         }
     }
 }
